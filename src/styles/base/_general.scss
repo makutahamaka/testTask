@@ -10,3 +10,10 @@ h1, h2, h3, h4, h5, h6, ul {
     @include lg(max-width, rem(930));
     @include xl(max-width, rem(1110));
 }
+
+$color_dark: #121726;
+$color_light: #222C42;
+$text_color_w: #FFFFFF;
+$text_color_g: #8187AD;
+$btn_color: #87E389;
+$transparency: rgba(0,0,0,0);
