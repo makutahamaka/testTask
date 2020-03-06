@@ -48,3 +48,71 @@ body{
     }
 }
 
+.header__main{
+  display: flex;
+}
+.header__login{
+  margin: 0 auto;
+  text-align: center;
+    h2{
+      @extend %title;
+    }
+    img{
+      margin: 0 5px;
+    }
+    form{
+      text-align: left;
+    }
+    p, input, select{
+      @extend %subtext;
+      background: $transparency;
+    }
+    input, select{
+      border: 1px solid  $border_color;
+      padding: 8px;
+    }
+}
+input::placeholder{
+  color: $subtext;
+}
+.header__login-email{
+  width: 25em;
+  border-radius: 15px;
+
+}
+.header__login-password{
+  width: 19em;
+  border-radius: 15px;
+}
+.header__login-select{
+  border-radius: 5px;
+}
+.header__login-text{
+  border-radius: 15px;
+}
+.header__login-btn{
+  width: 125px;
+  height: 30px;
+  background: $btn_color;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-left: 5em;
+}
+.header__login-link{
+  text-decoration: none;
+  margin-left: 8em;
+  color: $subtext;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  @extend %swiper_slide
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+}
