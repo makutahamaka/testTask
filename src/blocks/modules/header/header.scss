@@ -1,118 +1,109 @@
-body{
-  background: linear-gradient(to left, $color_dark, $color_light);
-  color: $text_color_w;
-
+body {
+    background: linear-gradient(to left, $color_dark, $color_light);
+    color: $text_color_w;
 }
-
-.header__title{
-  height: 110px;
-  background-color: $color_dark;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-    &-link{
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 21px;
-      color: $text_color_w;
-      margin: 0 20px;
+.header__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+    background-color: $color_dark;
+    &-link {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: $text_color_w;
+        margin: 0 20px;
     }
-
-    &-logo{
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: 23px;
+    &-logo {
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 23px;
     }
-
-    button{
-      height: 40px;
-      border-radius: 20px;
-      font-size: 16px;
-      font-weight: bold;
+    button {
+        height: 40px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 700;
     }
-
-    &-btn_a{
-      width: 115px;
-      background: $btn_color;
-      border: none;
-      margin-right: 10px;
+    &-btn_a {
+        width: 115px;
+        background: $btn_color;
+        border: none;
+        margin-right: 10px;
     }
-
-    &-btn_b{
-      width: 130px;
-      background: $transparency;
-      border: 1px solid #FFFFFF;
-      color: $text_color-w;
+    &-btn_b {
+        width: 130px;
+        background: $transparency;
+        border: 1px solid #ffffff;
+        color: $text_color-w;
     }
 }
 
-.header__main{
-  display: flex;
+.header__main {
+    display: flex;
 }
-.header__login{
-  margin: 0 auto;
-  text-align: center;
-    h2{
-      @extend %title;
+.header__login {
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+        @extend %title;
     }
-    img{
-      margin: 0 5px;
+    img {
+        margin: 0 5px;
     }
-    form{
-      text-align: left;
+    form {
+        text-align: left;
     }
-    p, input, select{
-      @extend %subtext;
-      background: $transparency;
+    p, input, select {
+        @extend %subtext;
+        background: $transparency;
     }
-    input, select{
-      border: 1px solid  $border_color;
-      padding: 8px;
+    input, select {
+        border: 1px solid  $border_color;
+        padding: 8px;
     }
 }
-input::placeholder{
-  color: $subtext;
+input::placeholder {
+    color: $subtext;
 }
-.header__login-email{
-  width: 25em;
-  border-radius: 15px;
-
+.header__login-email {
+    width: 25em;
+    border-radius: 15px;
 }
-.header__login-password{
-  width: 19em;
-  border-radius: 15px;
+.header__login-password {
+    width: 19em;
+    border-radius: 15px;
 }
-.header__login-select{
-  border-radius: 5px;
+.header__login-select {
+    border-radius: 5px;
 }
-.header__login-text{
-  border-radius: 15px;
+.header__login-text {
+    border-radius: 15px;
 }
-.header__login-btn{
-  width: 125px;
-  height: 30px;
-  background: $btn_color;
-  border: none;
-  border-radius: 20px;
-  font-weight: bold;
-  margin-left: 5em;
+.header__login-btn {
+    width: 125px;
+    height: 30px;
+    background: $btn_color;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-left: 5em;
 }
-.header__login-link{
-  text-decoration: none;
-  margin-left: 8em;
-  color: $subtext;
+.header__login-link {
+    text-decoration: none;
+    margin-left: 8em;
+    color: $subtext;
 }
 
 .swiper-container {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .swiper-slide {
-  @extend %swiper_slide
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
+    @extend %swiper_slide;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 }
