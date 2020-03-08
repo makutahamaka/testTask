@@ -109,14 +109,16 @@ input::placeholder {
 .header__menu {
     display: flex;
     justify-items: center;
+    flex-wrap: wrap;
     background: $color_dark;
     padding-top: 20px;
 }
 
 .header__menu-top {
     margin: 0 auto;
+    font-size: 14px;
     a {
-        margin: 0 40px 0 10px;
+        margin: 0 20px 0 8px;
         font-weight: 500;
         text-decoration: none;
         color: $text_color-w;
@@ -145,32 +147,33 @@ input::placeholder {
 .menu-top__search {
     display: inline-block;
 }
-#header-search {
+.header-search {
     position: relative;
-    width: 260px;
+    width: 360px;
     font-size: 14px;
     margin-left: 20px;
 }
 #search {
     width: 100%;
     border: 1px solid #898989;
-    padding: 10px;
+    padding: 7px;
     background-color: $transparency;
     border-radius: 20px;
+    color: $text_color_w;
 }
 #search:focus {
     outline: none;
 }
-#search-label {
+.search-label {
     position: absolute;
     top: 10px;
     left: 20px;
     color: $text_color_w;
 }
-#search:focus + #search-label {
+#search:focus + .search-label {
     display: none;
 }
-#search-submit {
+.search-submit {
     position: absolute;
     top: 10px;
     right: 0;
@@ -183,4 +186,17 @@ input::placeholder {
     cursor: pointer;
     outline: none;
 }
-
+.header__menu-bottom {
+    margin: 0 auto;
+    padding: 20px 0;
+    .menu-bottom__item {
+        margin: 0 10px;
+        border: 1px solid $border_color;
+        text-decoration: none;
+        color: $subtext_color;
+        border-radius: 10px;
+        font-size: 13px;
+        line-height: 15px;
+        padding: 2px 8px;
+    }
+}
