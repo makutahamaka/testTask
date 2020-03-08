@@ -1,6 +1,11 @@
 body {
     background: linear-gradient(to left, $color_dark, $color_light);
     color: $text_color_w;
+    min-width: 1900px;
+}
+.fixed-container {
+    width: 1480px;
+    margin: 0 auto;
 }
 
 .header__title {
@@ -118,7 +123,7 @@ input::placeholder {
     margin: 0 auto;
     font-size: 14px;
     a {
-        margin: 0 20px 0 8px;
+        margin: 0 40px 0 10px;
         font-weight: 500;
         text-decoration: none;
         color: $text_color-w;
@@ -149,14 +154,14 @@ input::placeholder {
 }
 .header-search {
     position: relative;
-    width: 360px;
+    width: 380px;
     font-size: 14px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 #search {
     width: 100%;
     border: 1px solid #898989;
-    padding: 7px;
+    padding: 8px;
     background-color: $transparency;
     border-radius: 20px;
     color: $text_color_w;
@@ -187,10 +192,9 @@ input::placeholder {
     outline: none;
 }
 .header__menu-bottom {
-    margin: 0 auto;
     padding: 20px 0;
     .menu-bottom__item {
-        margin: 0 10px;
+        margin-left: 30px;
         border: 1px solid $border_color;
         text-decoration: none;
         color: $subtext_color;

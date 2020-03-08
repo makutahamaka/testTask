@@ -1,0 +1,30 @@
+.catalog {
+    h2 {
+        display: inline-block;
+        margin: 40px 0;
+    }
+    a {
+        margin: 40px 0;
+        float: right;
+        text-decoration: none;
+        color: $text_color_btn;
+        padding-right: 20px;
+        background: url("../../img/svg/linkarrow.svg") center right no-repeat;
+    }
+}
+.catalog__wrapper {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(6, 250px);
+    grid-template-rows: repeat(2, 190px);
+}
+.catalog__wrapper div {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.catalog__wrapper div:nth-child(9) {
+    grid-column-start: 5;
+    grid-column-end: -1;
+    grid-row-start: 1;
+    grid-row-end: -1;
+}
