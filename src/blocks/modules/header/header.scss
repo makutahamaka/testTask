@@ -1,50 +1,186 @@
-body{
-  background: linear-gradient(to left, $color_dark, $color_light);
-  color: $text_color_w;
-
+body {
+    background: linear-gradient(to left, $color_dark, $color_light);
+    color: $text_color_w;
 }
 
-.header__title{
-  height: 110px;
-  background-color: $color_dark;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-    &-link{
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 21px;
-      color: $text_color_w;
-      margin: 0 20px;
+.header__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+    background-color: $color_dark;
+    &-link {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: $text_color_w;
+        margin: 0 20px;
     }
-
-    &-logo{
-      text-transform: uppercase;
-      font-size: 20px;
-      line-height: 23px;
+    &-logo {
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 23px;
     }
-
-    button{
-      height: 40px;
-      border-radius: 20px;
-      font-size: 16px;
-      font-weight: bold;
+    button {
+        height: 40px;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 700;
     }
-
-    &-btn_a{
-      width: 115px;
-      background: $btn_color;
-      border: none;
-      margin-right: 10px;
+    &-btn_a {
+        width: 115px;
+        background: $btn_color;
+        border: none;
+        margin-right: 10px;
     }
-
-    &-btn_b{
-      width: 130px;
-      background: $transparency;
-      border: 1px solid #FFFFFF;
-      color: $text_color-w;
+    &-btn_b {
+        width: 130px;
+        background: $transparency;
+        border: 1px solid #ffffff;
+        color: $text_color-w;
     }
+}
+
+.header__main {
+    display: flex;
+}
+
+.header__login {
+    margin: 0 auto;
+    text-align: center;
+    h2 {
+        @extend %title;
+    }
+    img {
+        margin: 0 5px;
+    }
+    form {
+        text-align: left;
+    }
+    p, input, select {
+        @extend %subtext;
+        background: $transparency;
+    }
+    input, select {
+        border: 1px solid  $border_color;
+        padding: 8px;
+    }
+}
+
+input::placeholder {
+    color: $subtext_color;
+}
+
+.header__login-email {
+    width: 25em;
+    border-radius: 15px;
+}
+
+.header__login-password {
+    width: 19em;
+    border-radius: 15px;
+}
+
+.header__login-select {
+    border-radius: 5px;
+}
+
+.header__login-text {
+    border-radius: 15px;
+}
+
+.header__login-btn {
+    width: 125px;
+    height: 30px;
+    background: $btn_color;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    margin-left: 5em;
+}
+
+.header__login-link {
+    text-decoration: none;
+    margin-left: 8em;
+    color: $subtext_color;
+}
+
+.header__menu {
+    display: flex;
+    justify-items: center;
+    background: $color_dark;
+    padding-top: 20px;
+}
+
+.header__menu-top {
+    margin: 0 auto;
+    a {
+        margin: 0 40px 0 10px;
+        font-weight: 500;
+        text-decoration: none;
+        color: $text_color-w;
+    }
+}
+
+.menu-top___select {
+    display: inline;
+    .select-wrapper {
+        position: relative;
+    }
+    .custom-select {
+        color: $text_color_w;
+        font-weight: 500;
+        border: 0;
+        padding-bottom: 2px;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-right: 16px;
+        background: url(../../../img/svg/check.svg.svg) 100% center no-repeat;
+        background-size: 10px 5px;
+    }
+}
+.menu-top__search {
+    display: inline-block;
+}
+#header-search {
+    position: relative;
+    width: 260px;
+    font-size: 14px;
+    margin-left: 20px;
+}
+#search {
+    width: 100%;
+    border: 1px solid #898989;
+    padding: 10px;
+    background-color: $transparency;
+    border-radius: 20px;
+}
+#search:focus {
+    outline: none;
+}
+#search-label {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: $text_color_w;
+}
+#search:focus + #search-label {
+    display: none;
+}
+#search-submit {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    border: 0;
+    padding: 0;
+    background: url(../../../img/svg/loupe.svg) center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    outline: none;
 }
 

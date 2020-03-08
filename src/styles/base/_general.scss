@@ -1,19 +1,52 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
-}
-
 $color_dark: #121726;
 $color_light: #222C42;
 $text_color_w: #FFFFFF;
 $text_color_g: #8187AD;
 $btn_color: #87E389;
 $transparency: rgba(0,0,0,0);
+$border_color: #32448C;
+$subtext_color: #8C91BA;
+
+%title{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+%subtext{
+  font-size: 12px;
+  line-height: 14px;
+  color: #8C91BA;
+}
+
+%placeholder{
+  ::-webkit-input-placeholder {color:#8C91BA; opacity:1;}
+  ::-moz-placeholder          {color:#8C91BA; opacity:1;}
+  :-moz-placeholder           {color:#8C91BA; opacity:1;}
+  :-ms-input-placeholder      {color:#8C91BA; opacity:1;}
+}
+
+%outline-none{
+  a:active, a:focus { outline: none; }
+  input, textarea {outline:none;}
+  input:active, textarea:active {outline:none;}
+  :focus {outline:none;}
+  textarea {resize:none;}
+  textarea {resize:vertical;}
+  textarea {resize:horizontal;}
+}
+
+%swiper_slide{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
