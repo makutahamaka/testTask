@@ -4,6 +4,8 @@ $text_color_w: #FFFFFF;
 $text_color_g: #8187AD;
 $text_color_btn: #87E389;
 $btn_color: #87E389;
+$btn_color_hover: #9BFF9D;
+$btn_color_active: rgba(155, 255, 164, 0.79);
 $transparency: rgba(0,0,0,0);
 $border_color: #32448C;
 $link_color: #32448C;
@@ -23,6 +25,22 @@ $catalog_color_light: #eb0255;
   color: #8C91BA;
 }
 
+%btn_hov_act{
+  &:hover{
+    background-color: $btn_color_hover;
+  }
+  &:active{
+    background-color: $btn_color_active;
+  }
+}
+%btn-tr_hov_act{
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  &:active {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
 %placeholder{
   ::-webkit-input-placeholder {color:#8C91BA; opacity:1;}
   ::-moz-placeholder          {color:#8C91BA; opacity:1;}

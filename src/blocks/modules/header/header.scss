@@ -23,27 +23,28 @@ body {
         margin: 0 20px;
     }
     &-logo {
-        text-transform: uppercase;
-        font-size: 20px;
-        line-height: 23px;
+        margin-right: 10%;
     }
     button {
         height: 40px;
         border-radius: 20px;
         font-size: 16px;
         font-weight: 700;
+        outline: 0 !important;
     }
     &-btn_a {
         width: 115px;
         background: $btn_color;
         border: none;
         margin-right: 10px;
+        @extend %btn_hov_act;
     }
     &-btn_b {
         width: 130px;
         background: $transparency;
         border: 1px solid #ffffff;
         color: $text_color-w;
+        @extend %btn-tr_hov_act;
     }
 }
 
@@ -66,6 +67,7 @@ body {
     p, input, select {
         @extend %subtext;
         background: $transparency;
+        outline: 0 !important;
     }
     input, select {
         border: 1px solid  $border_color;
@@ -103,6 +105,8 @@ input::placeholder {
     border-radius: 20px;
     font-weight: 700;
     margin-left: 5em;
+    @extend %btn_hov_act;
+    outline: 0 !important;
 }
 
 .header__login-link {
@@ -198,9 +202,12 @@ input::placeholder {
         border: 1px solid $border_color;
         text-decoration: none;
         color: $subtext_color;
-        border-radius: 10px;
+        border-radius: 15px;
         font-size: 13px;
         line-height: 15px;
-        padding: 2px 8px;
+        padding: 3px 10px;
+        &:hover {
+            border-color: #d73649;
+        }
     }
 }

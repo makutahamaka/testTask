@@ -25,6 +25,8 @@
         background: $transparency;
         color: $text_color_w;
         border-radius: 20px;
+        outline: 0 !important;
+        @extend %btn-tr_hov_act;
     }
 }
 

@@ -47,6 +47,8 @@
     text-align: center;
     opacity: 0;
     transition: opacity .7s;
+    outline: 0 !important;
+    @extend %btn_hov_act;
 }
 .catalog_big {
     top: 40%;
