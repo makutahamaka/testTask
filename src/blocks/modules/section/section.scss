@@ -114,6 +114,10 @@
             color: $subtext_color;
         }
 
+        td:nth-child(3) {
+            font-weight: 700;
+        }
+
         th, td {
             padding: 12px 0;
 
@@ -123,6 +127,7 @@
         }
     }
 }
+
 tr:nth-child(2n) {
     background: #222c42;
 }
