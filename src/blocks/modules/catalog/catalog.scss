@@ -54,3 +54,26 @@
     opacity: 1;
     transition: opacity .7s;
 }
+.catalog__label-wrapper {
+    position: absolute;
+}
+.catalog__label {
+    position: relative;
+    padding: 2px 16px;
+    background: linear-gradient(to left, #1d1269 0%, #eb0255 30%);
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -12px;
+        width: 5px;
+        height: 1px;
+        border-width: 11px 11px;
+        border-style: solid;
+        border-color: #eb0255 #eb0255 #eb0255 transparent;
+    }
+}
+.catalog1 .label1 {
+    top: 25px;
+    left: 386px;
+}

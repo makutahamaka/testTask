@@ -4,29 +4,17 @@
     grid-row-start: 1;
     grid-row-end: -1;
 }
-.catalog3 div {
-    position: relative;
-}
-.catalog__label-wrapper {
-    position: absolute;
-}
-.label1 {
+
+
+.catalog3 .label1 {
     top: 23px;
-    left: 155px;
+    left: 163px;
 }
-.catalog__label {
-    position: relative;
-    padding: 3px 20px;
-    background: linear-gradient(to left, #1d1269 0%, #eb0255 30%);
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -12px;
-        width: 5px;
-        height: 1px;
-        border-width: 11px 11px;
-        border-style: solid;
-        border-color: #eb0255 #eb0255 #eb0255 transparent;
-    }
+.catalog3 .label2 {
+    top: 23px;
+    left: 186px;
+}
+.catalog3 .label3 {
+    top: 30px;
+    left: 366px;
 }
