@@ -1,0 +1,132 @@
+.section {
+    display: flex;
+    height: 500px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.section_left__wrapper {
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 585px;
+    height: 360px;
+    font-size: 18px;
+    line-height: 19px;
+    p {
+        padding-top: 250px;
+    }
+    a {
+        color: $text_color_w;
+    }
+    button {
+        border: 1px solid $text_color_w;
+        padding: 10px 20px;
+        background: $transparency;
+        color: $text_color_w;
+        border-radius: 20px;
+    }
+}
+
+.section_center {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+    background: #20263e;
+    box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.35);
+}
+.block1 {
+    position: relative;
+
+    img:nth-child(1) {
+        position: absolute;
+        top: 50px;
+        left: -110px;
+    }
+
+    img:nth-child(2) {
+        position: absolute;
+        top: 50px;
+        left: -20px;
+    }
+
+    img:nth-child(3) {
+        position: absolute;
+        top: 105px;
+        left: -20px;
+    }
+}
+.block2 {
+    position: relative;
+
+    img:nth-child(1) {
+        position: absolute;
+        top: 170px;
+        left: -110px;
+    }
+
+    img:nth-child(2) {
+        position: absolute;
+        top: 170px;
+        left: -20px;
+    }
+
+    img:nth-child(3) {
+        position: absolute;
+        top: 225px;
+        left: -20px;
+    }
+}
+.block3 {
+    position: relative;
+
+    img:nth-child(1) {
+        position: absolute;
+        top: 280px;
+        left: -110px;
+    }
+
+    img:nth-child(2) {
+        position: absolute;
+        top: 280px;
+        left: -20px;
+    }
+
+    img:nth-child(3) {
+        position: absolute;
+        top: 335px;
+        left: -20px;
+    }
+}
+
+.section_right {
+    flex-grow: 1;
+
+    table {
+        width: 100%;
+        font-size: 14px;
+        border: none;
+        border-collapse: collapse;
+
+        th {
+            color: $subtext_color;
+        }
+
+        th, td {
+            padding: 12px 0;
+
+            a {
+                color: $text_color_w;
+            }
+        }
+    }
+}
+tr:nth-child(2n) {
+    background: #222c42;
+}
+tr:nth-child(2n+1) {
+    background: #182237;
+}
+
