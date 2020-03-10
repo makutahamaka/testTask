@@ -54,7 +54,11 @@ body {
 
 .header__login {
     margin: 0 auto;
+    padding: 0 180px;
     text-align: center;
+    background: url(../img/svg/diamondTop.svg) no-repeat 3% -35%,
+        url(../img/svg/diamondBot.svg) no-repeat 85% 100%;
+  
     h2 {
         @extend %title;
     }
@@ -73,6 +77,9 @@ body {
         border: 1px solid  $border_color;
         padding: 8px;
     }
+    p a {
+        color: $subtext_color;
+    }
 }
 
 input::placeholder {
@@ -85,12 +92,12 @@ input::placeholder {
 }
 
 .header__login-password {
-    width: 19em;
+    width: 17em;
     border-radius: 15px;
 }
 
 .header__login-select {
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .header__login-text {
